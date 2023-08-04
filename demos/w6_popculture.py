@@ -1,7 +1,9 @@
 pop_dict = {"The Matrix":["Keanu Reeves", "Carrie-Anne Moss", "Hugo Weaving"],
            "Harry Potter":["Daniel Ratcliffe", "Emma Watson", "Rupert Grint"],
            "Friends": ["Jennifer Aniston", "Courtney Cox", "Lisa Kudrow"],
-            "The office:"}
+           "The office": ["Steve Carrel", "Rain Wilson", "John Krasinski"],
+           "Jack Ryan": ["John Krasinski", "Abbie Cornish"],
+            "DS:in MoM": ["Benedict Cumberbach", "John Krasinski"]}
 
 
 def get_cast(title):
@@ -14,7 +16,8 @@ def get_cast(title):
 def add_title(title, cast):
     pop_dict[title] = cast
 
-add_title("The Boys, ["Anthony Starr", "William Butche", )
+# add_title("The Boys", ["Anthony Starr", "William Butcher", "Hughie"])
+# add_title("Friends", ["Jennifer Aniston"])
 
 
 def count_actors():
@@ -26,7 +29,9 @@ def count_actors():
             else:
                 actors[actor] = 1
     return actors
-print(count_actors))
+
+print(count_actors())
+#print(count_actors))
 # Homework - create a menu in run() to complete this demo
 # #t = input("What is the title of a movie you want to check?")
 #print(get_cast(t))
